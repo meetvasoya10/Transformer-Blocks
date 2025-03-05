@@ -102,4 +102,3 @@ loss = criterion(logits.view(-1, 30000), input_ids.view(-1))
 - **Hardware**: GPU recommended for efficiency (e.g., CUDA-enabled).
 
 These steps provide a foundation for pre-training, which you can fine-tune for specific tasks (e.g., translation, generation) afterward.
-```
