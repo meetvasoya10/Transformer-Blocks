@@ -28,7 +28,6 @@ This repo does not include training scripts or pre-trained weights, focusing ins
 
 ### Pre-Training Guide
 
-```markdown
 ## Pre-Training Guide
 
 Pre-training a Transformer involves learning general representations from large datasets. Here’s how you might use these blocks for pre-training:
