@@ -24,8 +24,6 @@ The goal is to provide a clear, reusable set of Transformer blocks for:
 
 This repo does not include training scripts or pre-trained weights, focusing instead on the architectural components and pre-training concepts.
 
----
-
 ## Pre-Training Guide
 
 Pre-training a Transformer involves learning general representations from large datasets. Here’s how you might use these blocks for pre-training:
