@@ -1,0 +1,514 @@
+[
+  {
+    "task": "expr",
+    "difficulty": 1,
+    "count": 200,
+    "seed": 1,
+    "file": "expr_d1.jsonl",
+    "sha256": "359aff7f31d941e7fa1fa53093471d004d0ac7ff112dacd0fbf08d99e578439e"
+  },
+  {
+    "task": "expr",
+    "difficulty": 2,
+    "count": 200,
+    "seed": 2,
+    "file": "expr_d2.jsonl",
+    "sha256": "20ad7c1fb847f1dff2c8abc1714c4d43d30b2233015c8a283a19d4e9e73dd6eb"
+  },
+  {
+    "task": "expr",
+    "difficulty": 3,
+    "count": 200,
+    "seed": 3,
+    "file": "expr_d3.jsonl",
+    "sha256": "24936cb16fd26d94a2eddebab9d8dc71bf9f90671f2a7b48a1c4a2bf8f432b29"
+  },
+  {
+    "task": "expr",
+    "difficulty": 4,
+    "count": 200,
+    "seed": 4,
+    "file": "expr_d4.jsonl",
+    "sha256": "73982c6d84c3ba46cc53004751a24f717affaca2f7613545763f10d93e520fed"
+  },
+  {
+    "task": "expr",
+    "difficulty": 5,
+    "count": 200,
+    "seed": 5,
+    "file": "expr_d5.jsonl",
+    "sha256": "3fe2b5555342943e6d35e8a359179fe07f27e9065960ae5aee032d7d50360aa0"
+  },
+  {
+    "task": "expr",
+    "difficulty": 6,
+    "count": 200,
+    "seed": 6,
+    "file": "expr_d6.jsonl",
+    "sha256": "a9d1b058cf3864e1cd91cbe962fb7be3ad14fff7ec75a8e351306089b701c2c0"
+  },
+  {
+    "task": "expr",
+    "difficulty": 7,
+    "count": 200,
+    "seed": 7,
+    "file": "expr_d7.jsonl",
+    "sha256": "571478cb165f189fb503799bc63ff1dcbe33878cd978e4358999eb47e2b132c6"
+  },
+  {
+    "task": "expr",
+    "difficulty": 8,
+    "count": 200,
+    "seed": 8,
+    "file": "expr_d8.jsonl",
+    "sha256": "b89b4cd7cf50afb6c26a21614c5b0a1b7c532c11346ab8514b78c9a80f9e2b6b"
+  },
+  {
+    "task": "expr",
+    "difficulty": 9,
+    "count": 200,
+    "seed": 9,
+    "file": "expr_d9.jsonl",
+    "sha256": "ec0fde72fff72ae64897028b8d16653a0ce441b44922b46c597c7520426b0e1e"
+  },
+  {
+    "task": "expr",
+    "difficulty": 10,
+    "count": 200,
+    "seed": 10,
+    "file": "expr_d10.jsonl",
+    "sha256": "b65b262d72831869bfa9bd5d09d6614f62ab09a8b3670a2c5c5c2d07e1f3b368"
+  },
+  {
+    "task": "expr",
+    "difficulty": 11,
+    "count": 200,
+    "seed": 11,
+    "file": "expr_d11.jsonl",
+    "sha256": "37aee26e68b12a3698962618184b0458fbcb5e54ebe1925d85234132e2f27e16"
+  },
+  {
+    "task": "expr",
+    "difficulty": 12,
+    "count": 200,
+    "seed": 12,
+    "file": "expr_d12.jsonl",
+    "sha256": "c090e2fc39e0853c7acb2f9ad1abfd4a83b6e4b8e97c8fe57a32ca3eb710cabf"
+  },
+  {
+    "task": "expr",
+    "difficulty": 13,
+    "count": 200,
+    "seed": 13,
+    "file": "expr_d13.jsonl",
+    "sha256": "de9ce81c68e159c1aa666ad6be0046f3f4d855c5eeea2615ca1aa2d922723429"
+  },
+  {
+    "task": "expr",
+    "difficulty": 14,
+    "count": 200,
+    "seed": 14,
+    "file": "expr_d14.jsonl",
+    "sha256": "34f832cef21f2d4abf1de7cf195c5a143ef83f33ea0556694cf7b43e5820c488"
+  },
+  {
+    "task": "expr",
+    "difficulty": 15,
+    "count": 200,
+    "seed": 15,
+    "file": "expr_d15.jsonl",
+    "sha256": "800f363e04b3fcf093ca5ca978b2484ebe2379aee6f424c877be2f96c8267bae"
+  },
+  {
+    "task": "expr",
+    "difficulty": 16,
+    "count": 200,
+    "seed": 16,
+    "file": "expr_d16.jsonl",
+    "sha256": "9e98bda4a157c1745d932aae59584de559ecba8ffee86a8ca0e603eeb815c0eb"
+  },
+  {
+    "task": "expr",
+    "difficulty": 17,
+    "count": 200,
+    "seed": 17,
+    "file": "expr_d17.jsonl",
+    "sha256": "2f50b62f4bd7a28fdab2159ede1a89d2dff21643d63b0b2ad8446538f2a42ddf"
+  },
+  {
+    "task": "expr",
+    "difficulty": 18,
+    "count": 200,
+    "seed": 18,
+    "file": "expr_d18.jsonl",
+    "sha256": "ea783bd9d1488c9eecbb7b42fc17b42779e2f7431e4711e7e67fa55736a13903"
+  },
+  {
+    "task": "expr",
+    "difficulty": 19,
+    "count": 200,
+    "seed": 19,
+    "file": "expr_d19.jsonl",
+    "sha256": "8e62ad74ee9ac1ebf8de13880577912817124dc07b553772fdc7c3baa2bd818e"
+  },
+  {
+    "task": "expr",
+    "difficulty": 20,
+    "count": 200,
+    "seed": 20,
+    "file": "expr_d20.jsonl",
+    "sha256": "bbcfe13e256c83a422caff448110a874d265a8b8f9f720c4332f886fa0f718f1"
+  },
+  {
+    "task": "expr",
+    "difficulty": 21,
+    "count": 200,
+    "seed": 21,
+    "file": "expr_d21.jsonl",
+    "sha256": "4890bfbe4ba54d3db21845f7a101a5cbc0982996742260ab491b7c91d2401e8c"
+  },
+  {
+    "task": "expr",
+    "difficulty": 22,
+    "count": 200,
+    "seed": 22,
+    "file": "expr_d22.jsonl",
+    "sha256": "2fdd95a6071178417869eda07ccfcc5e6adb6b2ceae3b89e961121bfb9bac585"
+  },
+  {
+    "task": "expr",
+    "difficulty": 23,
+    "count": 200,
+    "seed": 23,
+    "file": "expr_d23.jsonl",
+    "sha256": "f4dab2d8c9c8772b0db6fec1ef4fe01da9b693f77d7dcbc93551996a6b70e3ef"
+  },
+  {
+    "task": "expr",
+    "difficulty": 24,
+    "count": 200,
+    "seed": 24,
+    "file": "expr_d24.jsonl",
+    "sha256": "027995fc980ca13ee62e3014159338d031d8a5d817ab1ef2c095c4e0ca003f67"
+  },
+  {
+    "task": "expr",
+    "difficulty": 25,
+    "count": 200,
+    "seed": 25,
+    "file": "expr_d25.jsonl",
+    "sha256": "7263d78ae775930003b61308ffae672922893117f8187de7fe43fd70974f9c0d"
+  },
+  {
+    "task": "expr",
+    "difficulty": 26,
+    "count": 200,
+    "seed": 26,
+    "file": "expr_d26.jsonl",
+    "sha256": "8682750c49022910b5fad4d1c2ca10b2e31108a7c01c7ae3656ecd6803f28d18"
+  },
+  {
+    "task": "expr",
+    "difficulty": 27,
+    "count": 200,
+    "seed": 27,
+    "file": "expr_d27.jsonl",
+    "sha256": "be1bb746f1e4ccff6f9bbdef2d8469721c8698766699b0894d47b706e28020e6"
+  },
+  {
+    "task": "expr",
+    "difficulty": 28,
+    "count": 200,
+    "seed": 28,
+    "file": "expr_d28.jsonl",
+    "sha256": "10b043bbf63d83bf7d03765ac16b5a1d825bc4fa6a2c5b5e9c69c1a2ff9f074e"
+  },
+  {
+    "task": "expr",
+    "difficulty": 29,
+    "count": 200,
+    "seed": 29,
+    "file": "expr_d29.jsonl",
+    "sha256": "bb4ba32fcd703f1d4de53a4300344bab701071da068539f8cf6e36a327bf2c54"
+  },
+  {
+    "task": "expr",
+    "difficulty": 30,
+    "count": 200,
+    "seed": 30,
+    "file": "expr_d30.jsonl",
+    "sha256": "a8a34a382e29cb2d7bca7e3a206717bf45bb319f61efc0bec64f29eb2b34ad21"
+  },
+  {
+    "task": "expr",
+    "difficulty": 31,
+    "count": 200,
+    "seed": 31,
+    "file": "expr_d31.jsonl",
+    "sha256": "386bb53b4d9b4708107677f9d2978297a92e69867d3418e980c3bafe173f87e1"
+  },
+  {
+    "task": "expr",
+    "difficulty": 32,
+    "count": 200,
+    "seed": 32,
+    "file": "expr_d32.jsonl",
+    "sha256": "ca10e093e259a8ea30a624eb7e3387a3d3a1a384f6da48cde2109dd145b462b9"
+  },
+  {
+    "task": "chain",
+    "difficulty": 1,
+    "count": 200,
+    "seed": 10001,
+    "file": "chain_d1.jsonl",
+    "sha256": "9cd1c5df3abd3e4df5674b503b9445a04c2c8b629167efb7a0beaa792c3ea35c"
+  },
+  {
+    "task": "chain",
+    "difficulty": 2,
+    "count": 200,
+    "seed": 10002,
+    "file": "chain_d2.jsonl",
+    "sha256": "1eb326bd8fd2e9a341849053ec118a5bb3c94fb4ed485fc1366b10bf655817af"
+  },
+  {
+    "task": "chain",
+    "difficulty": 3,
+    "count": 200,
+    "seed": 10003,
+    "file": "chain_d3.jsonl",
+    "sha256": "eadb295ec54b0afa4dbfcdc38fe125265b0afa9deaf27c2319f42d13662585d2"
+  },
+  {
+    "task": "chain",
+    "difficulty": 4,
+    "count": 200,
+    "seed": 10004,
+    "file": "chain_d4.jsonl",
+    "sha256": "8eb516df5d6924f0e1100eb40a1479724aeca19adfcce2554b30870afb1b0152"
+  },
+  {
+    "task": "chain",
+    "difficulty": 5,
+    "count": 200,
+    "seed": 10005,
+    "file": "chain_d5.jsonl",
+    "sha256": "17c94a23bd156eeb6fd7594e20e10070afd72513a044171c3e59f021bf37f0e8"
+  },
+  {
+    "task": "chain",
+    "difficulty": 6,
+    "count": 200,
+    "seed": 10006,
+    "file": "chain_d6.jsonl",
+    "sha256": "1eaf799339b61a5af016bdeabd639b9b548e44d42a96372f0972fff418a837d0"
+  },
+  {
+    "task": "chain",
+    "difficulty": 7,
+    "count": 200,
+    "seed": 10007,
+    "file": "chain_d7.jsonl",
+    "sha256": "a794b26c2d7d5f9abd253baf3154dfe93d4c45d8ce6b9eaad624ecc940598309"
+  },
+  {
+    "task": "chain",
+    "difficulty": 8,
+    "count": 200,
+    "seed": 10008,
+    "file": "chain_d8.jsonl",
+    "sha256": "00850f5231bccca3467590a57778cfb6d66fce18565e4f78be5d3564cc36d053"
+  },
+  {
+    "task": "chain",
+    "difficulty": 9,
+    "count": 200,
+    "seed": 10009,
+    "file": "chain_d9.jsonl",
+    "sha256": "3acb03c74494a10a7d9e4ff6323a5f6e5b427ffba3a052257c941b49c74e8621"
+  },
+  {
+    "task": "chain",
+    "difficulty": 10,
+    "count": 200,
+    "seed": 10010,
+    "file": "chain_d10.jsonl",
+    "sha256": "5a88c1d670a2b15cc932785781df87976d842e335fea2724808b2a1d5d991981"
+  },
+  {
+    "task": "chain",
+    "difficulty": 11,
+    "count": 200,
+    "seed": 10011,
+    "file": "chain_d11.jsonl",
+    "sha256": "af15638958ce0466193d628e69ce05652870882c8c5ed6d663b8c8cc7b41c6b1"
+  },
+  {
+    "task": "chain",
+    "difficulty": 12,
+    "count": 200,
+    "seed": 10012,
+    "file": "chain_d12.jsonl",
+    "sha256": "79e8c674b7c97853397002cd0364b1467aa867daf5243cba9e054b89a18c3466"
+  },
+  {
+    "task": "chain",
+    "difficulty": 13,
+    "count": 200,
+    "seed": 10013,
+    "file": "chain_d13.jsonl",
+    "sha256": "e730ccd0628d191ba4d8a457cab75d57fec2cbcdac4b332330f2bbf5b2b3fa02"
+  },
+  {
+    "task": "chain",
+    "difficulty": 14,
+    "count": 200,
+    "seed": 10014,
+    "file": "chain_d14.jsonl",
+    "sha256": "3841432197f1e13ae55fa3e981460d8cf1102ad193c36b3f4f2a6d697035a300"
+  },
+  {
+    "task": "chain",
+    "difficulty": 15,
+    "count": 200,
+    "seed": 10015,
+    "file": "chain_d15.jsonl",
+    "sha256": "21a6fa4e1380511d165e1b9163f88a9bc85f356c6325ced5cb18ebdd7673dc3c"
+  },
+  {
+    "task": "chain",
+    "difficulty": 16,
+    "count": 200,
+    "seed": 10016,
+    "file": "chain_d16.jsonl",
+    "sha256": "8f454fdf333cd1a09d843b7b47b5f1fbc785f8d9ad2eaba1a56d6d983df3a86a"
+  },
+  {
+    "task": "chain",
+    "difficulty": 17,
+    "count": 200,
+    "seed": 10017,
+    "file": "chain_d17.jsonl",
+    "sha256": "1422ee5d65e2df9c4966e24bcce83457d4d96d6c8519ca2b4810aa8985adaca9"
+  },
+  {
+    "task": "chain",
+    "difficulty": 18,
+    "count": 200,
+    "seed": 10018,
+    "file": "chain_d18.jsonl",
+    "sha256": "6f533c3956bd91873edf0504588e47b987e80ad415c94bccd0bfd9ff2fbf78d1"
+  },
+  {
+    "task": "chain",
+    "difficulty": 19,
+    "count": 200,
+    "seed": 10019,
+    "file": "chain_d19.jsonl",
+    "sha256": "33b38fedc180cdc2a4464addff9c53245b1906e3bac84c4462d14fc088012c6a"
+  },
+  {
+    "task": "chain",
+    "difficulty": 20,
+    "count": 200,
+    "seed": 10020,
+    "file": "chain_d20.jsonl",
+    "sha256": "9aba9ab4b1896616628ecdbb96b71e91791b9557824867e472633e2ac3d2a830"
+  },
+  {
+    "task": "chain",
+    "difficulty": 21,
+    "count": 200,
+    "seed": 10021,
+    "file": "chain_d21.jsonl",
+    "sha256": "84e58a3c3a3e6590931ae0a5690802e2124b7f4e7a858e1e350f3c17262502f3"
+  },
+  {
+    "task": "chain",
+    "difficulty": 22,
+    "count": 200,
+    "seed": 10022,
+    "file": "chain_d22.jsonl",
+    "sha256": "e92293005ec33ef3dc1911792d3f38937d46f0923619a0d3ef11dc424688adb6"
+  },
+  {
+    "task": "chain",
+    "difficulty": 23,
+    "count": 200,
+    "seed": 10023,
+    "file": "chain_d23.jsonl",
+    "sha256": "1affd12de74e8ff41921d30a3910acc49010c3f9be0578ea9dcbc7277fa4d2b0"
+  },
+  {
+    "task": "chain",
+    "difficulty": 24,
+    "count": 200,
+    "seed": 10024,
+    "file": "chain_d24.jsonl",
+    "sha256": "d32dd9a61cba4cb48a63594be99ad6f8214346c706281d7ffc11ac4c53e6141b"
+  },
+  {
+    "task": "chain",
+    "difficulty": 25,
+    "count": 200,
+    "seed": 10025,
+    "file": "chain_d25.jsonl",
+    "sha256": "dff2ec4f4546e5e1df6735ce47c115990f04eed480708d600e9c69734076f02b"
+  },
+  {
+    "task": "chain",
+    "difficulty": 26,
+    "count": 200,
+    "seed": 10026,
+    "file": "chain_d26.jsonl",
+    "sha256": "c4248ea10723d6a2adf3896571fd1b0618b76541b1afac0091090dabde457588"
+  },
+  {
+    "task": "chain",
+    "difficulty": 27,
+    "count": 200,
+    "seed": 10027,
+    "file": "chain_d27.jsonl",
+    "sha256": "3a071faa144c72ac89299a840ae68be9c794fa3e59fe86c009b10de3d446fde0"
+  },
+  {
+    "task": "chain",
+    "difficulty": 28,
+    "count": 200,
+    "seed": 10028,
+    "file": "chain_d28.jsonl",
+    "sha256": "6358a724e41fa76623d7bbe7874d68af2cf7fb43c07f014aa74ada0917f9e072"
+  },
+  {
+    "task": "chain",
+    "difficulty": 29,
+    "count": 200,
+    "seed": 10029,
+    "file": "chain_d29.jsonl",
+    "sha256": "947e8506ff9f8d3b3f5c42c35f168b7d741d872825316e2ffda8a9ab13fc6806"
+  },
+  {
+    "task": "chain",
+    "difficulty": 30,
+    "count": 200,
+    "seed": 10030,
+    "file": "chain_d30.jsonl",
+    "sha256": "9c0c760c11619ebf6a8f44854217ac94476a42900fa1b0d992135a74d69899f2"
+  },
+  {
+    "task": "chain",
+    "difficulty": 31,
+    "count": 200,
+    "seed": 10031,
+    "file": "chain_d31.jsonl",
+    "sha256": "8b369ebeef626855509512a9cbb1e086fc607d18cec8365ad866b1678e213de7"
+  },
+  {
+    "task": "chain",
+    "difficulty": 32,
+    "count": 200,
+    "seed": 10032,
+    "file": "chain_d32.jsonl",
+    "sha256": "ba4b1cf6327f4ed8edb5fcc3bb3575f9f9d95582b8f90fab7e596327150d7f89"
+  }
+]
