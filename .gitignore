@@ -1,0 +1,11 @@
+*.pth
+*.pt
+*.bin
+*.log
+.env
+data/
+checkpoints/
+runs/
+__pycache__/
+.pytest_cache/
+.qodo/

@@ -13,7 +13,7 @@ This repository provides the foundational building blocks of a Transformer model
 - **`FullEncoder`**: Stacks multiple encoder layers for sequence encoding.
 - **`FullDecoder`**: Stacks multiple decoder layers for sequence decoding.
 
-Each module is implemented in PyTorch and documented with educational comments and docstrings.
+Each module is implemented in PyTorch and documented with educational comments and docstrings. All of them are importable from the `transformer_blocks` package.
 
 ## Purpose
 
@@ -22,7 +22,13 @@ The goal is to provide a clear, reusable set of Transformer blocks for:
 - Experimenting with pre-training strategies (e.g., Masked Language Modeling, sequence reconstruction).
 - Building custom Transformer-based models.
 
-This repo does not include training scripts or pre-trained weights, focusing instead on the architectural components and pre-training concepts.
+## Setup
+
+```bash
+pip install -r requirements.txt
+```
+
+Tested with Python 3.10.
 
 ## Pre-Training Guide
 
@@ -46,8 +52,7 @@ input_ids = [vocab.get(token, 1) for token in tokens]  # [2, 3]
 Assemble the Transformer blocks into an encoder-decoder architecture:
 ```python
 import torch.nn as nn
-from encoder_layer import FullEncoder
-from decoder_layer import FullDecoder
+from transformer_blocks import FullEncoder, FullDecoder
 
 class Transformer(nn.Module):
     def __init__(self, vocab_size=30000, d_model=256, num_heads=4, d_ff=512, num_layers=6):
@@ -70,7 +75,7 @@ model = Transformer()
 ### 3. Pre-Training Objectives
 Define objectives to pre-train the model:
 - **Encoder (Masked Language Modeling - MLM)**:
-  - Randomly mask 15% of input tokens (e.g., replace with `<mask>` or a random token).
+  - Randomly mask 10% of input tokens, replacing each with `<mask>` (no random-token or keep-original replacement).
   - Predict the original tokens using the `mlm_head` in `FullEncoder`.
   - Loss: Cross-entropy over masked positions.
 - **Decoder (Sequence Reconstruction)**:
@@ -89,11 +94,61 @@ loss = criterion(logits.view(-1, 30000), input_ids.view(-1))
 - **MLM**: Pre-trains the encoder to understand context (e.g., BERT-like).
 - **Reconstruction**: Pre-trains the decoder for sequence prediction (e.g., autoregressive tasks).
 
-### 4. Training Tips
-- **Batch Size**: Start with 128, adjust based on GPU memory.
-- **Epochs**: 10-50, depending on dataset size and convergence.
-- **Optimizer**: Use Adam with a learning rate of 0.001, optionally with a scheduler (e.g., cosine annealing).
-- **Masking**: For MLM, mask tokens dynamically during training to improve robustness.
-- **Hardware**: GPU recommended for efficiency (e.g., CUDA-enabled).
+## Pre-training
 
-These steps provide a foundation for pre-training, which you can fine-tune for specific tasks (e.g., translation, generation) afterward.
+The encoder is pre-trained with masked language modeling. In the training code, 10% of the tokens in each sample are replaced with `<mask>` (no random-token or keep-original replacement), and the model predicts the original tokens at those positions. Padding and `<unk>` tokens are never masked.
+
+### 1. Prepare the data
+
+```bash
+python scripts/prepare_data.py --out data/cleaned_wiki_corpus.txt
+```
+
+This downloads the ConvoKit `wiki-corpus` and writes the cleaned text, one entry per line.
+
+### 2. Train
+
+Place `cot1.json` and `cot2.json` under `data/`, then run:
+
+```bash
+python scripts/train_encoder.py --wiki data/cleaned_wiki_corpus.txt --cot1 data/cot1.json --cot2 data/cot2.json --out checkpoints/pretrained_encoder.pth
+```
+
+All four arguments are optional and default to the paths shown. A Hugging Face token can be supplied through the `HF_TOKEN` environment variable (or a `.env` file); it is optional.
+
+### Data sources
+
+1. Cleaned ConvoKit `wiki-corpus` (Wikipedia talk pages), produced by `scripts/prepare_data.py`
+2. `cot1.json`: chain-of-thought examples, using the `output` field
+3. `cot2.json`: chain-of-thought examples, using the `output` field
+4. `PrimeIntellect/verifiable-coding-problems` from Hugging Face (`prompt` field, first 100,000 examples)
+5. `Salesforce/wikitext`, `wikitext-103-raw-v1` train split (first 500,000 non-empty examples)
+
+The sources are concatenated and de-duplicated before training.
+
+### Configuration
+
+| Setting | Value |
+|---------|-------|
+| Vocabulary | Word-level (NLTK `word_tokenize`), 30,000 tokens |
+| `d_model` | 256 |
+| Attention heads | 4 |
+| `d_ff` | 512 |
+| Encoder layers | 6 |
+| Batch size | 128 |
+| Sequence length | 128 |
+| Optimizer | Adam, learning rate 1e-3 |
+| Scheduler | `ReduceLROnPlateau` |
+| Precision | FP16 (mixed precision, CUDA) |
+
+### Reference run
+
+- 939,124 training samples
+- 10 epochs
+- About 90 minutes per epoch
+
+## Tests
+
+```bash
+pytest tests/ -q
+```

@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 from typing import Optional, Tuple, List
 
-from token_embedding import TokenEmbedding
-from positional_encoding import PositionalEncoding
-from multi_head_attention import MultiHeadAttention
+from .token_embedding import TokenEmbedding
+from .positional_encoding import PositionalEncoding
+from .multi_head_attention import MultiHeadAttention
 
 class EncoderLayer(nn.Module):
     """
