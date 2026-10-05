@@ -1,3 +1,4 @@
+import hashlib
 import json
 import keyword
 import os
@@ -159,3 +160,20 @@ def test_make_evalsets_is_reproducible(tmp_path):
     assert runs[0] == runs[1]
     assert len(runs[0]) == 2 * 32
     assert all(len(e["sha256"]) == 64 and e["count"] == 200 for e in runs[0])
+
+
+def test_regenerated_evalsets_match_committed_manifest(tmp_path):
+    script = os.path.join(ROOT, "scripts", "make_evalsets.py")
+    out_dir = tmp_path / "data"
+    manifest = tmp_path / "manifest.json"
+    subprocess.run(
+        [sys.executable, script, "--out-dir", str(out_dir), "--manifest", str(manifest)],
+        check=True, capture_output=True,
+    )
+    with open(os.path.join(ROOT, "evalsets", "manifest.json"), encoding="utf-8") as f:
+        committed = json.load(f)
+    assert len(committed) == 2 * 32
+    for entry in committed:
+        data = (out_dir / entry["file"]).read_bytes()
+        assert hashlib.sha256(data).hexdigest() == entry["sha256"], entry["file"]
+    assert json.loads(manifest.read_text(encoding="utf-8")) == committed

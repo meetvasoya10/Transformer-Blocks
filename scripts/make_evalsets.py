@@ -31,10 +31,11 @@ def main():
             seed = 10000 * task_index + difficulty
             rng = random.Random(seed)
             lines = [json.dumps(generate(task, difficulty, rng), sort_keys=True) for _ in range(COUNT)]
-            data = ("\n".join(lines) + "\n").encode("utf-8")
+            text = "\n".join(lines) + "\n"
+            data = text.encode("utf-8")
             name = f"{task}_d{difficulty}.jsonl"
-            with open(os.path.join(args.out_dir, name), "wb") as f:
-                f.write(data)
+            with open(os.path.join(args.out_dir, name), "w", encoding="utf-8", newline="\n") as f:
+                f.write(text)
             entries.append({
                 "task": task,
                 "difficulty": difficulty,
